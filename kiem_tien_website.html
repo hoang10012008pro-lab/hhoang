@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThuyyAnn Affiliate</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #87CEEB, #F08080);
+            color: #1a202c;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .scroll-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+        .social-link {
+            transition: transform 0.2s ease-in-out;
+        }
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+        .card a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <!-- Header -->
+    <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-800 leading-tight mb-2">
+            ThuyyAnn Affiliate
+        </h1>
+        <p class="text-gray-600 text-lg font-medium">Tìm kiếm cơ hội, bắt đầu ngay hôm nay!</p>
+        
+        <!-- Ảnh cá nhân và tên -->
+        <div class="mt-8 flex justify-center items-center flex-col">
+            <img src="https://res.cloudinary.com/dfjqxjozd/image/upload/v1755320853/hhaha_ahegme.png" alt="ThuyyAnn" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover mb-2">
+            <span class="text-lg font-semibold text-gray-700">ThuyyAnn</span>
+            <p class="text-sm text-gray-500">Người sáng lập</p>
+        </div>
+    </header>
+
+    <!-- Main content container -->
+    <main class="container mx-auto p-6 rounded-3xl shadow-2xl">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">CÁC SẢN PHẨM TÔI CÓ Ở ĐÂY 👇</h2>
+        
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 scroll-container">
+            <!-- Sản phẩm sẽ được thêm vào đây bằng JavaScript -->
+        </div>
+    </main>
+
+    <!-- Social Media Links Section -->
+    <div class="flex flex-col items-center justify-center space-y-4 my-8">
+        <span class="text-lg font-bold text-gray-800">CẦN HỖ TRỢ LIÊN HỆ Ở ĐÂY</span>
+        <div class="flex items-center space-x-6">
+            <!-- Link Facebook -->
+            <a href="https://www.facebook.com/your-facebook-profile" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600 hover:text-blue-800 transition duration-200" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.083c0-2.194 1.184-3.417 3.297-3.417h1.703v2z"/></svg>
+            </a>
+            <!-- Link TikTok -->
+            <a href="https://www.tiktok.com/@thuyyanncuti03" target="_blank" class="social-link">
+                <img src="https://res.cloudinary.com/dfjqxjozd/image/upload/v1755324041/Thi%E1%BA%BFt_k%E1%BA%BF_ch%C6%B0a_c%C3%B3_t%C3%AAn_iuy7n3.png" alt="TikTok Logo" class="h-10 w-10">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 text-gray-600">
+        <p>&copy; 2024 ThuyyAnn Affiliate. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+        // Data for parent categories
+        const categories = [
+            {
+                id: 1,
+                name: "THỜI TRANG",
+                description: "Phong cách thời trang cá tính năng động.",
+                image: "https://placehold.co/400x300/FFA07A/ffffff?text=Quần+Áo",
+            },
+            {
+                id: 2,
+                name: "MỸ PHẨM",
+                description: "Mỹ phẩm chất lượng uy tín hiệu quả.",
+                image: "https://placehold.co/400x300/FFB6C1/ffffff?text=Mỹ+Phẩm",
+            },
+            {
+                id: 3,
+                name: "ĐỒ GIA DỤNG",
+                description: "Những món gia dụng tiện lợi bạn có thể cần tại đây.",
+                image: "https://placehold.co/400x300/98FB98/ffffff?text=Đồ+Gia+Dụng",
+            },
+            {
+                id: 4,
+                name: "ĐỒ XÀM XÍ",
+                description: "Giải trí độc đáo, giúp giảm stress, rèn luyện sự khéo léo.",
+                image: "https://placehold.co/400x300/FFFF99/ffffff?text=Đồ+Xàm+Xàm",
+            },    
+        ];
+
+        const productGrid = document.getElementById('product-grid');
+
+        function renderCategories() {
+            productGrid.innerHTML = '';
+            categories.forEach(category => {
+                const categoryElement = document.createElement('a');
+                categoryElement.href = `product_detail.html?categoryId=${category.id}`;
+                categoryElement.className = 'card bg-white rounded-2xl shadow-xl overflow-hidden p-6 text-center transform';
+                categoryElement.innerHTML = `
+                    <div class="relative w-full h-48 mb-4">
+                        <img src="${category.image}" alt="${category.name}" class="w-full h-full object-cover rounded-xl shadow-inner">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">${category.name}</h3>
+                    <p class="text-gray-600 text-sm mb-6">${category.description}</p>
+                `;
+                productGrid.appendChild(categoryElement);
+            });
+        }
+
+        window.onload = renderCategories;
+    </script>
+</body>
+</html>
